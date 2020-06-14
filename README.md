@@ -13,5 +13,5 @@
 # 應用
 遠端更新[ganker](https://incognitas.net/works/ganker-1)時可以使用
 
-# 其他資訊
+# 更多資訊
 https://incognitas.net/works/simple-java-file-server
