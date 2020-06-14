@@ -1,5 +1,6 @@
 # simple-java-file-server
-用java製作的簡易http檔案伺服器
+用java製作的簡易http檔案伺服器  
+如要直接下載使用，請去[Release](https://github.com/HSSLC/simple-java-file-server/releases)下載jar
 
 # 用途
 啟動後可以用瀏覽器之類的程式連上去，下載/瀏覽檔案等等
@@ -10,4 +11,7 @@
 檔案系統根目錄是./files/，後方位址會與網址後路徑相同
 
 # 應用
-遠端更新[ganker](https://github.com/HSSLC/ganker)時可以使用
+遠端更新[ganker](https://incognitas.net/works/ganker-1)時可以使用
+
+# 其他資訊
+https://incognitas.net/works/simple-java-file-server
