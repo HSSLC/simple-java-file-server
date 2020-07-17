@@ -30,6 +30,8 @@ public class fileServer
 					InputStream is = fileServer.class.getResourceAsStream("/" + fileSystemPath + path);
 					if(is == null)
 					{
+						Headers header = exchange.getResponseHeaders();
+						header.add("Content-Type","text/plain; charset=UTF-8");
 						File f = new File(fileSystemPath + path);
 						if(f.isDirectory())
 						{
@@ -47,6 +49,11 @@ public class fileServer
 							is = new FileInputStream(f);
 						}
 					}
+					/*else
+					{
+						Headers header = exchange.getResponseHeaders();
+						header.add("Content-Type","text/plain; charset=big5");
+					}*/
 					exchange.sendResponseHeaders(200,0);
 					int hasRead;
 					while((hasRead = is.read(buffer)) > 0)
