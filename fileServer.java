@@ -13,8 +13,8 @@ public class fileServer
 	{
 		if(args.length > 0) port = Integer.parseInt(args[0]);
 		if(args.length > 1) fileSystemPath = args[1];
-		System.out.println("tips:U can add a port number and base folder in args");
-		System.out.println("file server running on localhost:" + port + " and based on " + fileSystemPath);
+		System.out.println("tips:U can specify port number and base folder in args");
+		System.out.println("file server is running on localhost:" + port + " and based on " + fileSystemPath);
 		try
 		{
 			server = HttpServer.create(new InetSocketAddress(port), 0);
